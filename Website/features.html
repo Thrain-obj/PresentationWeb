@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features | GenEqual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav aria-label="Main">
+  <a href="index.html">Home</a><a href="mission.html">Mission &amp; SDG 5</a><a href="features.html" aria-current="page">Features</a><a href="impact.html">Impact &amp; Community</a>
+</nav>
+
+
+<section>
+  <h1>Features</h1>
+  <p class="lead">A mockup of the GenEqual dashboard. The quiz works, and the other tools use placeholders for now.</p>
+  <div class="app">
+    <div class="appbar"><i></i><i></i><i></i><span>genequal / dashboard</span></div>
+    <div class="appbody">
+      <div class="side" role="tablist" aria-label="Dashboard">
+        <button class="tab" role="tab" data-tab="p-quiz" aria-selected="true">📝 Quizzes</button>
+        <button class="tab" role="tab" data-tab="p-res" aria-selected="false">📚 Resources</button>
+        <button class="tab" role="tab" data-tab="p-camp" aria-selected="false">📣 Campaigns</button>
+      </div>
+      <div>
+        <div class="panel on" id="p-quiz" role="tabpanel">
+          <h2>Interactive quizzes and learning activities</h2>
+          <p>Pick an answer to see right away whether it’s correct.</p>
+          <div class="quiz" id="quizBox" aria-live="polite"></div>
+        </div>
+        <div class="panel" id="p-res" role="tabpanel">
+          <h2>Digital educational resources</h2>
+          <p>Tap a resource to preview it.</p>
+          <div class="grid">
+            <button class="card rl" data-title="What is gender equality?" data-text="Gender equality means everyone has the same rights, respect, and opportunities, whatever their gender."><div class="thumb">📖</div><h3>What is gender equality?</h3><p>A short guide for beginners.</p><span class="go">Open resource ↗</span></button>
+            <button class="card rl" data-title="Spotting unfair treatment" data-text="Unfair treatment can look like being left out, being told what you can’t do, or being judged by stereotypes."><div class="thumb">👀</div><h3>Spotting unfair treatment</h3><p>Learn the signs.</p><span class="go">Open resource ↗</span></button>
+            <button class="card rl" data-title="Speaking up kindly" data-text="You can disagree without attacking. Name what was unfair, say how it affects people, and suggest a fairer way."><div class="thumb">🗣️</div><h3>Speaking up kindly</h3><p>Tips for speaking up.</p><span class="go">Open resource ↗</span></button>
+            <button class="card rl" data-title="SDG 5 explained" data-text="SDG 5 is the United Nations goal to achieve gender equality and empower all women and girls."><div class="thumb">🎯</div><h3>SDG 5 explained</h3><p>The goal in plain words.</p><span class="go">Open resource ↗</span></button>
+          </div>
+        </div>
+        <div class="panel" id="p-camp" role="tabpanel">
+          <h2>Online equality campaigns</h2>
+          <p>Pick a campaign to support.</p>
+          <div class="grid">
+            <div class="card"><div class="thumb">📣</div><h3>Respect Starts With Me</h3><p>Small daily choices that make school feel fair.</p><p><button class="btn" data-support aria-pressed="false">Support this campaign</button></p></div>
+            <div class="card"><div class="thumb">🎤</div><h3>Every Voice Counts</h3><p>Share ideas and make sure everyone gets heard.</p><p><button class="btn" data-support aria-pressed="false">Support this campaign</button></p></div>
+            <div class="card"><div class="thumb">🏫</div><h3>Fair Play in School</h3><p>Equal chances in class, clubs, and sports.</p><p><button class="btn" data-support aria-pressed="false">Support this campaign</button></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<dialog id="modal"><h3></h3><p></p><p class="small">Placeholder: the full resource would open here.</p><button class="btn" style="margin-top:.8rem">Close</button></dialog>
+<footer>
+  <h2>Together for equality</h2>
+  <p>Everyone deserves equal rights, respect, and opportunities.</p>
+  <p style="margin-top:1rem"><a class="btn" data-join="foot" href="index.html#join">Join GenEqual!</a></p>
+  <p class="small" style="margin-top:2rem">GenEqual · Group 3 ICT · Demo version</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

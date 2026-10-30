@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GenEqual: Equal Rights, Equal Opportunities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav aria-label="Main">
+  <a href="index.html" aria-current="page">Home</a><a href="mission.html">Mission &amp; SDG 5</a><a href="features.html">Features</a><a href="impact.html">Impact &amp; Community</a>
+</nav>
+
+
+<section class="hero">
+  <div class="badge" aria-hidden="true">
+    <span class="spark" style="top:4%;right:2%">✦</span><span class="spark s2" style="bottom:12%;left:-4%">✦</span><span class="spark s3" style="top:20%;left:-6%">✦</span>
+    <svg viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6BB6F5"/><stop offset="1" stop-color="#F27DB0"/></linearGradient></defs>
+      <circle cx="50" cy="48" r="26" stroke="url(#g)" stroke-width="9"/>
+      <path d="M68 30 L96 8 M80 8 H96 V24" stroke="#6BB6F5" stroke-width="9"/>
+      <path d="M50 74 V108 M36 92 H64" stroke="#F27DB0" stroke-width="9"/>
+      <path d="M40 42 H60 M40 55 H60" stroke="#7C5CD6" stroke-width="7"/>
+    </svg>
+  </div>
+  <div>
+    <h1><span class="gen">Gen</span><span class="eq">Equal</span></h1>
+    <div class="tag">Equal Rights, Equal Opportunities</div>
+    <p class="lead">GenEqual is a digital platform that promotes gender equality through education, awareness, and equal opportunities for everyone.</p>
+    <p style="margin-top:1.2rem"><a class="btn" data-join="hero" href="#join">Join GenEqual!</a> <a class="btn alt" href="mission.html">Our mission</a></p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <h2>Where to next?</h2>
+  <div class="grid">
+    <a class="card" href="mission.html"><div class="ico">🌍</div><h3>Mission &amp; SDG 5</h3><p>Why gender equality matters and how we help.</p></a>
+    <a class="card" href="features.html"><div class="ico">✨</div><h3>Features</h3><p>Try a quiz, open a resource, see a campaign.</p></a>
+    <a class="card" href="impact.html"><div class="ico">💞</div><h3>Impact &amp; Community</h3><p>Who it’s for and the good it can do.</p></a>
+  </div>
+</section>
+
+<section id="join">
+  <div class="join" id="joinBox">
+    <h2>Join GenEqual!</h2>
+    <p>Learn, speak up, and help create a fairer world for everyone. Tell us your name to join the community.</p>
+    <form id="joinForm" novalidate>
+      <input type="text" id="jname" placeholder="Your first name" maxlength="20" aria-label="Your first name">
+      <select id="jrole" aria-label="I am a"><option>Student</option><option>Teacher</option><option>Parent</option><option>Other</option></select>
+      <button class="btn" type="submit">Join GenEqual!</button>
+    </form>
+    <p class="small" id="jmsg" aria-live="polite">Demo form: nothing is sent or saved.</p>
+  </div>
+</section>
+<footer>
+  <h2>Together for equality</h2>
+  <p>Everyone deserves equal rights, respect, and opportunities.</p>
+  <p style="margin-top:1rem"><a class="btn" data-join="foot" href="index.html#join">Join GenEqual!</a></p>
+  <p class="small" style="margin-top:2rem">GenEqual · Group 3 ICT · Demo version</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
